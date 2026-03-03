@@ -432,8 +432,19 @@
       box-shadow: 0 10px 20px rgba(140, 122, 230, .7);
     }
 
+    /* ---------- DESKTOP DEFAULT ---------- */
+    .hamburger {
+      display: none;
+      /* hide hamburger on desktop */
+    }
+
+    nav ul {
+      display: flex;
+      /* desktop menu always visible */
+    }
+
     /* ---------- MEDIA ---------- */
-    @media(max-width:900px) {
+    @media(max-width: 900px) {
       .hero {
         flex-direction: column;
         text-align: center;
@@ -453,11 +464,31 @@
       }
     }
 
-    /* ---------- MOBILE FIXES ---------- */
+    /* ---------- MEDIA ---------- */
+    @media(max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .projects-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .fixed-socials {
+        flex-direction: row;
+        bottom: 20px;
+        top: auto;
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+
+    /* ---------- MOBILE FIXES + HAMBURGER ---------- */
     @media(max-width: 600px) {
       body {
         font-size: 16px;
-        /* base font */
       }
 
       .hero {
@@ -487,9 +518,47 @@
         margin: 10px auto;
       }
 
+      /* ---------- HAMBURGER NAV ---------- */
+      nav {
+        padding: 0 20px;
+        position: relative;
+        /* ensure ul positions correctly */
+      }
+
+      /* Mobile menu hidden by default */
       nav ul {
+        display: none;
         flex-direction: column;
         gap: 15px;
+        background: #12122e;
+        position: absolute;
+        top: 80px;
+        /* below navbar */
+        right: 0;
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+      }
+
+      /* Show menu when hamburger clicked */
+      nav ul.show {
+        display: flex;
+      }
+
+      /* Hamburger button */
+      .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #8c7ae6;
+      }
+
+      nav li {
+        margin: 10px 0;
+        font-weight: 500;
+        text-align: center;
       }
     }
   </style>
@@ -497,9 +566,9 @@
 
 <body>
 
-  <!-- NAV -->
   <nav>
     <div class="logo">Zen Zed</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -885,6 +954,13 @@
       autoplay: true,
       path: './ai_robot.json'  // <- your renamed JSON file
     });
+  </script>
+  <!-- HAMBURGER MENU SCRIPT -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('nav ul');
+      menu.classList.toggle('show');
+    }
   </script>
 </body>
 

@@ -482,64 +482,69 @@
   </section>
 
   <section id="about">
-  <h2>About Me</h2>
-  <div class="about-container">
-    <img src="hero_png.jpeg" alt="Zain Zahid working on ML projects">
-    <div class="about-text">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="hero_png.jpeg" alt="Zain Zahid working on ML projects">
+      <div class="about-text">
 
-      <!-- Intro -->
-      <p>Hello! I'm <span class="purple">Zain Zahid</span> (Zen Zed), a self-taught Python developer and aspiring
-        <strong>Machine Learning & AI Engineer</strong> with hands-on experience in practical ML & AI projects.
-      </p>
+        <!-- Intro -->
+        <p>Hello! I'm <span class="purple">Zain Zahid</span> (Zen Zed), a self-taught Python developer and aspiring
+          <strong>Machine Learning & AI Engineer</strong> with hands-on experience in practical ML & AI projects.
+        </p>
 
-      <p>My work focuses on solving real-world problems using supervised & unsupervised learning, deep learning, and
-        automation techniques. I enjoy turning ideas into functional applications, from predictive models to automated
-        solutions.
-      </p>
+        <p>My work focuses on solving real-world problems using supervised & unsupervised learning, deep learning, and
+          automation techniques. I enjoy turning ideas into functional applications, from predictive models to automated
+          solutions.
+        </p>
 
-      <p>My approach is simple: <strong>learn → build → iterate</strong>. I am passionate about pushing the boundaries
-        of what AI can achieve and continuously improving my skills through projects and deployment experience.
-      </p>
+        <p>My approach is simple: <strong>learn → build → iterate</strong>. I am passionate about pushing the boundaries
+          of what AI can achieve and continuously improving my skills through projects and deployment experience.
+        </p>
 
-      <!-- Buttons -->
-      <div class="about-buttons"
-        style="margin-top:20px; display:flex; gap:10px; opacity:0; transform: translateY(20px); transition:0.6s;">
-        <button class="download-btn" id="viewCvBtn">📄 View My CV</button>
-      </div>
-    </div> <!-- about-text -->
-  </div> <!-- about-container -->
-</section>
+        <!-- Buttons -->
+        <div class="about-buttons"
+          style="margin-top:20px; display:flex; gap:10px; opacity:0; transform: translateY(20px); transition:0.6s;">
+          <button class="download-btn" id="viewCvBtn">📄 View My CV</button>
+        </div>
+      </div> <!-- about-text -->
+    </div> <!-- about-container -->
+  </section>
 
-<!-- Hidden CV iframe + Legal Name -->
-<div id="cvContainer"
-  style="margin-top:20px; display:none; width:100%; max-width:1200px; height:950px; margin-left:auto; margin-right:auto;">
+  <!-- Hidden CV iframe + Legal Name -->
+  <div id="cvContainer"
+    style="margin-top:20px; display:none; width:100%; max-width:1200px; height:950px; margin-left:auto; margin-right:auto;">
 
-  <!-- Legal name shown only here -->
-<p style="font-size:1.1rem; color:#fff; text-align:center; margin-bottom:15px;">
-  My legal name as per certificates: 
-  <span style="color:#6f2ed6; font-weight:700;">Muhammad Zain Ul Abedeen</span>
-</p>
+    <!-- Legal name shown only here -->
+    <p style="font-size:1.1rem; color:#fff; text-align:center; margin-bottom:15px;">
+      My legal name as per certificates:
+      <span style="color:#6f2ed6; font-weight:700;">Muhammad Zain Ul Abedeen</span>
+    </p>
 
-  <iframe src="cv.pdf" width="100%" height="100%" style="border:1px solid #8c7ae6; border-radius:10px;">
-    This browser does not support PDFs. <a href="cv.pdf" target="_blank">View CV here</a>.
-  </iframe>
-</div>
+    <iframe src="https://media.githubusercontent.com/media/ZenZed06/zen-zed-portfolio/refs/heads/main/cv.pdf"
+      width="100%" height="100%" style="border:1px solid #8c7ae6; border-radius:10px;">
+      This browser does not support PDFs.
+      <a href="https://media.githubusercontent.com/media/ZenZed06/zen-zed-portfolio/refs/heads/main/cv.pdf"
+        target="_blank">
+        View CV here
+      </a>.
+    </iframe>
+  </div>
 
-<!-- JS to toggle CV -->
-<script>
-  const cvBtn = document.getElementById('viewCvBtn');
-  const cvContainer = document.getElementById('cvContainer');
+  <!-- JS to toggle CV -->
+  <script>
+    const cvBtn = document.getElementById('viewCvBtn');
+    const cvContainer = document.getElementById('cvContainer');
 
-  cvBtn.addEventListener('click', () => {
-    if (cvContainer.style.display === 'none') {
-      cvContainer.style.display = 'block';
-      cvBtn.innerText = '📄 Hide My CV';
-    } else {
-      cvContainer.style.display = 'none';
-      cvBtn.innerText = '📄 View My CV';
-    }
-  });
-</script>
+    cvBtn.addEventListener('click', () => {
+      if (cvContainer.style.display === 'none') {
+        cvContainer.style.display = 'block';
+        cvBtn.innerText = '📄 Hide My CV';
+      } else {
+        cvContainer.style.display = 'none';
+        cvBtn.innerText = '📄 View My CV';
+      }
+    });
+  </script>
 
 
   <!-- SKILLS -->

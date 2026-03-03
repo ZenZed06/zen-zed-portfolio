@@ -504,366 +504,338 @@
         <!-- Buttons -->
         <div class="about-buttons"
           style="margin-top:20px; display:flex; gap:10px; opacity:0; transform: translateY(20px); transition:0.6s;">
-          <button class="download-btn" id="viewCvBtn">📄 View My CV</button>
+
+          <a href="cv-final.pdf" download class="download-btn">
+            📄 Download My CV
+          </a>
+
         </div>
-      </div> <!-- about-text -->
-    </div> <!-- about-container -->
-  </section>
 
-  <!-- Hidden CV container + Legal Name -->
-  <div id="cvContainer"
-    style="margin-top:20px; display:none; width:100%; max-width:1200px; height:950px; margin-left:auto; margin-right:auto;">
+        <!-- SKILLS -->
+        <section id="skills">
+          <h2>Skills</h2>
+          <div class="services-container">
+            <div class="service-card">
+              <h3>Machine Learning</h3>
+              <p>Supervised & unsupervised learning, regression & classification, clustering, feature engineering, model
+                evaluation, hyperparameter tuning, implemented with <strong>Scikit-learn</strong>.</p>
+            </div>
+            <div class="service-card">
+              <h3>Deep Learning</h3>
+              <p>Neural networks, backpropagation concepts, CNN-based image classification, and model training using
+                TensorFlow & Keras.</p>
+            </div>
+            <div class="service-card">
+              <h3>Mathematics for ML</h3>
+              <p>Linear algebra, probability & statistics, gradient descent optimization, and cost function analysis.
+              </p>
+            </div>
+            <div class="service-card">
+              <h3>Programming & Data Tools</h3>
+              <p>Python, NumPy, Pandas, data preprocessing, and visualization workflows using Matplotlib.</p>
+            </div>
+          </div>
+        </section>
 
-    <!-- Legal name shown only here -->
-    <p style="font-size:1.1rem; color:#fff; text-align:center; margin-bottom:15px;">
-      My legal name as per certificates:
-      <span style="color:#6f2ed6; font-weight:700;">Muhammad Zain Ul Abedeen</span>
-    </p>
+        <!-- PROJECTS -->
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="projects-container">
 
-    <!-- Use object tag instead of iframe for better inline PDF support -->
-    <object data="cv-final.pdf" type="application/pdf" width="100%" height="100%"
-      style="border:1px solid #8c7ae6; border-radius:10px;">
-      <p style="color:#fff; text-align:center; padding:20px;">
-        Your browser does not support PDFs. <a href="cv-final.pdf" target="_blank" style="color:#8c7ae6;">Click here to
-          view/download</a>
-      </p>
-    </object>
-  </div>
+            <!-- RevenueLens -->
+            <div class="project-card">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/qPZRbOvz41I?si=fR35wgBZbBCpharH"
+                title="Revenue Lens Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+              <h3>RevenueLens</h3>
+              <p>A Python-based Streamlit web app that analyzes customer behavior and visualizes how each customer
+                contributes
+                to annual revenue. Ideal for sales and marketing teams.</p>
+              <ul>
+                <li>Upload customer transaction data (CSV/Excel)</li>
+                <li>Visualize revenue contribution per customer</li>
+                <li>Identify top-performing and underperforming segments</li>
+                <li>Interactive charts with filters for date, product, and region</li>
+                <li>Export insights as PDF or CSV reports</li>
+              </ul>
+              <div class="tech-badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Streamlit</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">NumPy</span>
+                <span class="tech-badge">Seaborn</span>
+                <span class="tech-badge">Matplotlib</span>
+                <span class="tech-badge">Scikit-learn</span>
+              </div>
+              <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+                <button onclick="window.open('https://revenuelens.streamlit.app/', '_blank')">💻 Live Demo</button>
+                <button
+                  onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-datascience-python-activity-7404373047555571713-ujgY', '_blank')">🔗
+                  LinkedIn Post</button>
+                <button onclick="window.open('https://github.com/ZenZed06/RevenueLens', '_blank')">📂 GitHub
+                  Repo</button>
+              </div>
+            </div>
 
-  <!-- JS to toggle CV -->
-  <script>
-    const cvBtn = document.getElementById('viewCvBtn');
-    const cvContainer = document.getElementById('cvContainer');
+            <!-- SheShield -->
+            <div class="project-card">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/YrdTJo_HLs0?si=aZjIMq0Te9OpWQzY"
+                title="SheShield Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+              <h3>SheShield – Breast Health Assessment Tool</h3>
+              <p>Early detection saves lives. SheShield is a Python & Streamlit ML app using <strong>Logistic
+                  Regression</strong> to assist healthcare professionals.</p>
+              <ul>
+                <li>Upload structured patient data (CSV/Excel)</li>
+                <li>Generate actionable risk insights</li>
+                <li>Download PDF risk report</li>
+              </ul>
+              <div class="tech-badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Streamlit</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">NumPy</span>
+                <span class="tech-badge">Scikit-learn</span>
+              </div>
+              <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+                <button onclick="window.open('https://sheshield.streamlit.app/', '_blank')">💻 Live Demo</button>
+                <button
+                  onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-python-healthcareai-activity-7406589659834888192-xwSO', '_blank')">🔗
+                  LinkedIn Post</button>
+                <button onclick="window.open('https://github.com/ZenZed06/SheShield', '_blank')">📂 GitHub Repo</button>
+              </div>
+            </div>
 
-    cvBtn.addEventListener('click', () => {
-      if (cvContainer.style.display === 'none') {
-        cvContainer.style.display = 'block';
-        cvBtn.innerText = '📄 Hide My CV';
-        // Scroll to the CV section smoothly
-        cvContainer.scrollIntoView({ behavior: "smooth" });
-      } else {
-        cvContainer.style.display = 'none';
-        cvBtn.innerText = '📄 View My CV';
-      }
-    });
-  </script>
+            <!-- Image Classification -->
+            <div class="project-card">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/cDi09QUYC20?si=pjQgALHu1ha_71W4"
+                title="Image Classification Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+              <h3>Image Classification Neural Network</h3>
+              <p>Built and trained a CNN on CIFAR-10 dataset to classify unseen images using TensorFlow.</p>
+              <ul>
+                <li>End-to-end ML workflow: training, saving, inference</li>
+                <li>Real-world image processing</li>
+                <li>Turned theory into a functioning ML system</li>
+              </ul>
+              <div class="tech-badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">TensorFlow</span>
+                <span class="tech-badge">Keras</span>
+                <span class="tech-badge">CIFAR-10</span>
+                <span class="tech-badge">NumPy</span>
+              </div>
+              <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+                <button
+                  onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-deeplearning-neuralnetworks-activity-7417067963071197184-Ggcn', '_blank')">🔗
+                  LinkedIn Post</button>
+                <button onclick="window.open('https://github.com/ZenZed06/cifar10-image-classifier', '_blank')">📂
+                  GitHub
+                  Repo</button>
+              </div>
+            </div>
 
+            <!-- FIFA K-Means -->
+            <div class="project-card">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/RXMRptDg7Fo?si=g0S2JyzhKW6rlKJO"
+                title="FIFA K-Means Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+              <h3>FIFA K-Means Clustering</h3>
+              <p>Custom K-Means clustering algorithm on FIFA 22 player data to recommend similar players based on
+                features.
+              </p>
+              <ul>
+                <li>Cluster players by Overall, Potential, Market Value, Wage, Age</li>
+                <li>PCA-based visualization for clusters</li>
+                <li>Min-Max scaling, random centroid initialization, Euclidean distance, iterative centroid updates</li>
+                <li>Player recommendation system: find closest similar players</li>
+              </ul>
+              <div class="tech-badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">NumPy</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">Machine Learning</span>
+                <span class="tech-badge">K-Means</span>
+                <span class="tech-badge">PCA</span>
+              </div>
+              <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+                <button
+                  onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-python-datascience-activity-7430959494748119040-e6N2', '_blank')">🔗
+                  LinkedIn Post</button>
+                <button onclick="window.open('https://github.com/ZenZed06/FIFA-KMeans-Project', '_blank')">📂 GitHub
+                  Repo</button>
+              </div>
+            </div>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="services-container">
-      <div class="service-card">
-        <h3>Machine Learning</h3>
-        <p>Supervised & unsupervised learning, regression & classification, clustering, feature engineering, model
-          evaluation, hyperparameter tuning, implemented with <strong>Scikit-learn</strong>.</p>
-      </div>
-      <div class="service-card">
-        <h3>Deep Learning</h3>
-        <p>Neural networks, backpropagation concepts, CNN-based image classification, and model training using
-          TensorFlow & Keras.</p>
-      </div>
-      <div class="service-card">
-        <h3>Mathematics for ML</h3>
-        <p>Linear algebra, probability & statistics, gradient descent optimization, and cost function analysis.</p>
-      </div>
-      <div class="service-card">
-        <h3>Programming & Data Tools</h3>
-        <p>Python, NumPy, Pandas, data preprocessing, and visualization workflows using Matplotlib.</p>
-      </div>
-    </div>
-  </section>
+            <!-- Angela AI -->
+            <div class="project-card">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/_ot61ZysQqY?si=lBHgJaSsClH8ewJa"
+                title="Angela AI Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+              <h3>Angela – AI Voice Assistant</h3>
+              <p>Python-based interactive virtual assistant that responds to voice commands, automates tasks, and
+                provides
+                hands-free support.</p>
+              <ul>
+                <li>Set reminders & perform calculations</li>
+                <li>Retrieve real-time info (time, date, web queries)</li>
+                <li>Automate browsing tasks (Google, YouTube, social media)</li>
+                <li>Play songs from YouTube by voice command</li>
+                <li>Human-like responses using gTTS</li>
+                <li>Integrated with OpenAI API</li>
+              </ul>
+              <div class="tech-badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Speech Recognition</span>
+                <span class="tech-badge">gTTS</span>
+                <span class="tech-badge">OpenAI API</span>
+                <span class="tech-badge">Automation</span>
+                <span class="tech-badge">YouTube API</span>
+              </div>
+              <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+                <button
+                  onclick="window.open('https://www.linkedin.com/posts/zenzed_ai-automation-python-activity-7373812944742129664--qxJ', '_blank')">🔗
+                  LinkedIn Post</button>
+                <button onclick="window.open('https://github.com/ZenZed06/AngelaProject', '_blank')">📂 GitHub
+                  Repo</button>
+              </div>
+            </div>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
+          </div>
+        </section>
 
-      <!-- RevenueLens -->
-      <div class="project-card">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/qPZRbOvz41I?si=fR35wgBZbBCpharH"
-          title="Revenue Lens Video" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-        <h3>RevenueLens</h3>
-        <p>A Python-based Streamlit web app that analyzes customer behavior and visualizes how each customer contributes
-          to annual revenue. Ideal for sales and marketing teams.</p>
-        <ul>
-          <li>Upload customer transaction data (CSV/Excel)</li>
-          <li>Visualize revenue contribution per customer</li>
-          <li>Identify top-performing and underperforming segments</li>
-          <li>Interactive charts with filters for date, product, and region</li>
-          <li>Export insights as PDF or CSV reports</li>
-        </ul>
-        <div class="tech-badges">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">Streamlit</span>
-          <span class="tech-badge">Pandas</span>
-          <span class="tech-badge">NumPy</span>
-          <span class="tech-badge">Seaborn</span>
-          <span class="tech-badge">Matplotlib</span>
-          <span class="tech-badge">Scikit-learn</span>
+        <!-- CERTIFICATIONS -->
+        <section id="certifications">
+          <h2>Certifications</h2>
+          <div class="certifications-container">
+            <div class="cert-card" onclick="openCert('gfg.png')">GeeksforGeeks Python Programming Course</div>
+            <div class="cert-card" onclick="openCert('datascience.png')">Simplilearn: Introduction to Applied Data
+              Science
+              with Python</div>
+            <div class="cert-card" onclick="openCert('Mathsforml.png')">Simplilearn: Mathematics for Machine Learning
+            </div>
+            <div class="cert-card" onclick="openCert('mlspecialization.png')">DeepLearning.AI Machine Learning
+              Specialization
+            </div>
+          </div>
+          <div id="certModal" class="modal" onclick="closeCert()">
+            <span class="close" onclick="closeCert()">&times;</span>
+            <img id="certImage" src="">
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <form class="contact-form" action="https://formspree.io/f/mlgwkjer" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+
+        <footer>
+          <p>© 2026 Zen Zed. All rights reserved.</p>
+        </footer>
+
+        <div id="backToTop">Top</div>
+
+        <!-- MODERN FIXED SOCIALS -->
+        <div class="fixed-socials">
+          <a href="https://www.linkedin.com/in/zenzed" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/ZenZed06" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-          <button onclick="window.open('https://revenuelens.streamlit.app/', '_blank')">💻 Live Demo</button>
-          <button
-            onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-datascience-python-activity-7404373047555571713-ujgY', '_blank')">🔗
-            LinkedIn Post</button>
-          <button onclick="window.open('https://github.com/ZenZed06/RevenueLens', '_blank')">📂 GitHub Repo</button>
-        </div>
-      </div>
 
-      <!-- SheShield -->
-      <div class="project-card">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YrdTJo_HLs0?si=aZjIMq0Te9OpWQzY"
-          title="SheShield Video" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-        <h3>SheShield – Breast Health Assessment Tool</h3>
-        <p>Early detection saves lives. SheShield is a Python & Streamlit ML app using <strong>Logistic
-            Regression</strong> to assist healthcare professionals.</p>
-        <ul>
-          <li>Upload structured patient data (CSV/Excel)</li>
-          <li>Generate actionable risk insights</li>
-          <li>Download PDF risk report</li>
-        </ul>
-        <div class="tech-badges">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">Streamlit</span>
-          <span class="tech-badge">Pandas</span>
-          <span class="tech-badge">NumPy</span>
-          <span class="tech-badge">Scikit-learn</span>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-          <button onclick="window.open('https://sheshield.streamlit.app/', '_blank')">💻 Live Demo</button>
-          <button
-            onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-python-healthcareai-activity-7406589659834888192-xwSO', '_blank')">🔗
-            LinkedIn Post</button>
-          <button onclick="window.open('https://github.com/ZenZed06/SheShield', '_blank')">📂 GitHub Repo</button>
-        </div>
-      </div>
+        <script>
 
-      <!-- Image Classification -->
-      <div class="project-card">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/cDi09QUYC20?si=pjQgALHu1ha_71W4"
-          title="Image Classification Video" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-        <h3>Image Classification Neural Network</h3>
-        <p>Built and trained a CNN on CIFAR-10 dataset to classify unseen images using TensorFlow.</p>
-        <ul>
-          <li>End-to-end ML workflow: training, saving, inference</li>
-          <li>Real-world image processing</li>
-          <li>Turned theory into a functioning ML system</li>
-        </ul>
-        <div class="tech-badges">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">TensorFlow</span>
-          <span class="tech-badge">Keras</span>
-          <span class="tech-badge">CIFAR-10</span>
-          <span class="tech-badge">NumPy</span>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-          <button
-            onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-deeplearning-neuralnetworks-activity-7417067963071197184-Ggcn', '_blank')">🔗
-            LinkedIn Post</button>
-          <button onclick="window.open('https://github.com/ZenZed06/cifar10-image-classifier', '_blank')">📂 GitHub
-            Repo</button>
-        </div>
-      </div>
+          /* ---------- FADE & SLIDE SECTIONS ---------- */
+          const sections = document.querySelectorAll("section,.hero");
+          const observer = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("active"); }); }, { threshold: .05 });
+          sections.forEach(s => observer.observe(s));
 
-      <!-- FIFA K-Means -->
-      <div class="project-card">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/RXMRptDg7Fo?si=g0S2JyzhKW6rlKJO"
-          title="FIFA K-Means Video" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-        <h3>FIFA K-Means Clustering</h3>
-        <p>Custom K-Means clustering algorithm on FIFA 22 player data to recommend similar players based on features.
-        </p>
-        <ul>
-          <li>Cluster players by Overall, Potential, Market Value, Wage, Age</li>
-          <li>PCA-based visualization for clusters</li>
-          <li>Min-Max scaling, random centroid initialization, Euclidean distance, iterative centroid updates</li>
-          <li>Player recommendation system: find closest similar players</li>
-        </ul>
-        <div class="tech-badges">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">NumPy</span>
-          <span class="tech-badge">Pandas</span>
-          <span class="tech-badge">Machine Learning</span>
-          <span class="tech-badge">K-Means</span>
-          <span class="tech-badge">PCA</span>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-          <button
-            onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-python-datascience-activity-7430959494748119040-e6N2', '_blank')">🔗
-            LinkedIn Post</button>
-          <button onclick="window.open('https://github.com/ZenZed06/FIFA-KMeans-Project', '_blank')">📂 GitHub
-            Repo</button>
-        </div>
-      </div>
+          const aboutParagraphs = document.querySelectorAll(".about-text p");
+          const aboutButtons = document.querySelector(".about-buttons");
 
-      <!-- Angela AI -->
-      <div class="project-card">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/_ot61ZysQqY?si=lBHgJaSsClH8ewJa"
-          title="Angela AI Video" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-        <h3>Angela – AI Voice Assistant</h3>
-        <p>Python-based interactive virtual assistant that responds to voice commands, automates tasks, and provides
-          hands-free support.</p>
-        <ul>
-          <li>Set reminders & perform calculations</li>
-          <li>Retrieve real-time info (time, date, web queries)</li>
-          <li>Automate browsing tasks (Google, YouTube, social media)</li>
-          <li>Play songs from YouTube by voice command</li>
-          <li>Human-like responses using gTTS</li>
-          <li>Integrated with OpenAI API</li>
-        </ul>
-        <div class="tech-badges">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">Speech Recognition</span>
-          <span class="tech-badge">gTTS</span>
-          <span class="tech-badge">OpenAI API</span>
-          <span class="tech-badge">Automation</span>
-          <span class="tech-badge">YouTube API</span>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-          <button
-            onclick="window.open('https://www.linkedin.com/posts/zenzed_ai-automation-python-activity-7373812944742129664--qxJ', '_blank')">🔗
-            LinkedIn Post</button>
-          <button onclick="window.open('https://github.com/ZenZed06/AngelaProject', '_blank')">📂 GitHub Repo</button>
-        </div>
-      </div>
+          const aboutObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                // Animate paragraphs sequentially
+                aboutParagraphs.forEach((p, i) => {
+                  setTimeout(() => { p.classList.add("active"); }, i * 300);
+                });
 
-    </div>
-  </section>
+                // Animate buttons after all paragraphs
+                setTimeout(() => {
+                  aboutButtons.style.opacity = 1;
+                  aboutButtons.style.transform = "translateY(0)";
+                }, aboutParagraphs.length * 300 + 200); // 200ms extra for smoothness
 
-  <!-- CERTIFICATIONS -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certifications-container">
-      <div class="cert-card" onclick="openCert('gfg.png')">GeeksforGeeks Python Programming Course</div>
-      <div class="cert-card" onclick="openCert('datascience.png')">Simplilearn: Introduction to Applied Data Science
-        with Python</div>
-      <div class="cert-card" onclick="openCert('Mathsforml.png')">Simplilearn: Mathematics for Machine Learning</div>
-      <div class="cert-card" onclick="openCert('mlspecialization.png')">DeepLearning.AI Machine Learning Specialization
-      </div>
-    </div>
-    <div id="certModal" class="modal" onclick="closeCert()">
-      <span class="close" onclick="closeCert()">&times;</span>
-      <img id="certImage" src="">
-    </div>
-  </section>
+                aboutObserver.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.3 });
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form class="contact-form" action="https://formspree.io/f/mlgwkjer" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+          // Observe only the first paragraph (or container) to trigger animation
+          aboutParagraphs[0].parentElement && aboutObserver.observe(aboutParagraphs[0].parentElement);
 
-  <footer>
-    <p>© 2026 Zen Zed. All rights reserved.</p>
-  </footer>
+          /* ---------- BACK TO TOP ---------- */
+          const topBtn = document.getElementById("backToTop");
+          window.addEventListener("scroll", () => { topBtn.style.display = window.scrollY > 400 ? "block" : "none"; });
+          topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-  <div id="backToTop">Top</div>
+          /* ---------- TYPING EFFECT ---------- */
+          const skills = [
+            "Python Development",
+            "Building ML & AI Projects",
+            "Hands-on ML Experience",
+            "CNNs & Neural Networks",
+            "Supervised & Unsupervised Learning",
+            "Data Analysis",
+            "Feature Engineering & Model Tuning",
+            "Automation & No-Code AI"
+          ];
+          let s = 0, c = 0; const el = document.getElementById("typing");
+          function type() {
+            if (c < skills[s].length) { el.innerHTML += `<span>${skills[s][c++]}</span>`; setTimeout(type, 90); }
+            else setTimeout(del, 1500);
+          }
+          function del() {
+            if (c > 0) { let text = skills[s].substring(0, --c); el.innerHTML = ""; for (let i = 0; i < text.length; i++) { el.innerHTML += `<span>${text[i]}</span>`; } setTimeout(del, 50); }
+            else { s = (s + 1) % skills.length; type(); }
+          }
+          type();
 
-  <!-- MODERN FIXED SOCIALS -->
-  <div class="fixed-socials">
-    <a href="https://www.linkedin.com/in/zenzed" target="_blank">
-      <i class="fab fa-linkedin-in"></i>
-    </a>
-    <a href="https://github.com/ZenZed06" target="_blank"><i class="fab fa-github"></i></a>
-  </div>
-
-  <script>
-
-    /* ---------- FADE & SLIDE SECTIONS ---------- */
-    const sections = document.querySelectorAll("section,.hero");
-    const observer = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("active"); }); }, { threshold: .05 });
-    sections.forEach(s => observer.observe(s));
-
-    const aboutParagraphs = document.querySelectorAll(".about-text p");
-    const aboutButtons = document.querySelector(".about-buttons");
-
-    const aboutObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Animate paragraphs sequentially
-          aboutParagraphs.forEach((p, i) => {
-            setTimeout(() => { p.classList.add("active"); }, i * 300);
+          /* ---------- CERTIFICATE MODAL ---------- */
+          function openCert(src) {
+            document.getElementById("certImage").src = src;
+            document.getElementById("certModal").style.display = "flex";
+          }
+          function closeCert() {
+            document.getElementById("certModal").style.display = "none";
+          }
+        </script>
+        <script>
+          lottie.loadAnimation({
+            container: document.getElementById('heroAnimation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './ai_robot.json'  // <- your renamed JSON file
           });
-
-          // Animate buttons after all paragraphs
-          setTimeout(() => {
-            aboutButtons.style.opacity = 1;
-            aboutButtons.style.transform = "translateY(0)";
-          }, aboutParagraphs.length * 300 + 200); // 200ms extra for smoothness
-
-          aboutObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3 });
-
-    // Observe only the first paragraph (or container) to trigger animation
-    aboutParagraphs[0].parentElement && aboutObserver.observe(aboutParagraphs[0].parentElement);
-
-    /* ---------- BACK TO TOP ---------- */
-    const topBtn = document.getElementById("backToTop");
-    window.addEventListener("scroll", () => { topBtn.style.display = window.scrollY > 400 ? "block" : "none"; });
-    topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
-
-    /* ---------- TYPING EFFECT ---------- */
-    const skills = [
-      "Python Development",
-      "Building ML & AI Projects",
-      "Hands-on ML Experience",
-      "CNNs & Neural Networks",
-      "Supervised & Unsupervised Learning",
-      "Data Analysis",
-      "Feature Engineering & Model Tuning",
-      "Automation & No-Code AI"
-    ];
-    let s = 0, c = 0; const el = document.getElementById("typing");
-    function type() {
-      if (c < skills[s].length) { el.innerHTML += `<span>${skills[s][c++]}</span>`; setTimeout(type, 90); }
-      else setTimeout(del, 1500);
-    }
-    function del() {
-      if (c > 0) { let text = skills[s].substring(0, --c); el.innerHTML = ""; for (let i = 0; i < text.length; i++) { el.innerHTML += `<span>${text[i]}</span>`; } setTimeout(del, 50); }
-      else { s = (s + 1) % skills.length; type(); }
-    }
-    type();
-
-    /* ---------- CERTIFICATE MODAL ---------- */
-    function openCert(src) {
-      document.getElementById("certImage").src = src;
-      document.getElementById("certModal").style.display = "flex";
-    }
-    function closeCert() {
-      document.getElementById("certModal").style.display = "none";
-    }
-  </script>
-  <script>
-    lottie.loadAnimation({
-      container: document.getElementById('heroAnimation'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: './ai_robot.json'  // <- your renamed JSON file
-    });
-  </script>
+        </script>
 </body>
 
 </html>

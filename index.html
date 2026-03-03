@@ -522,12 +522,12 @@
 
     <!-- Use object tag instead of iframe for better inline PDF support -->
     <object data="cv-final.pdf" type="application/pdf" width="100%" height="100%"
-  style="border:1px solid #8c7ae6; border-radius:10px;">
-  <p style="color:#fff; text-align:center; padding:20px;">
-    Your browser does not support PDFs. <a href="cv-final.pdf" target="_blank" style="color:#8c7ae6;">Click here to
-      view/download</a>
-  </p>
-</object>
+      style="border:1px solid #8c7ae6; border-radius:10px;">
+      <p style="color:#fff; text-align:center; padding:20px;">
+        Your browser does not support PDFs. <a href="cv-final.pdf" target="_blank" style="color:#8c7ae6;">Click here to
+          view/download</a>
+      </p>
+    </object>
   </div>
 
   <!-- JS to toggle CV -->
@@ -574,171 +574,180 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <!-- RevenueLens -->
-      <div class="project-card">
-        <video controls>
-          <source src="revenuelens.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <h3>RevenueLens</h3>
-        <p>A Python-based Streamlit web app that analyzes customer behavior and visualizes how each customer contributes
-          to annual revenue. Ideal for sales and marketing teams to identify high-value customers.</p>
-        <ul style="text-align:left; font-size:0.9rem; margin-bottom:10px;">
-          <li>Upload customer transaction data (CSV/Excel)</li>
-          <li>Visualize revenue contribution per customer</li>
-          <li>Identify top-performing and underperforming segments</li>
-          <li>Interactive charts with filters for date, product, and region</li>
-          <li>Export insights as PDF or CSV reports</li>
-        </ul>
-        <div class="tech-badges">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">Streamlit</span>
-          <span class="tech-badge">Pandas</span>
-          <span class="tech-badge">NumPy</span>
-          <span class="tech-badge">Seaborn</span>
-          <span class="tech-badge">Matplotlib</span>
-          <span class="tech-badge">Scikit-learn</span>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-          <button onclick="window.open('https://revenuelens.streamlit.app/', '_blank')">💻 Live Demo</button>
-          <button
-            onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-datascience-python-activity-7404373047555571713-ujgY', '_blank')">🔗
-            LinkedIn Post</button>
-          <button onclick="window.open('https://github.com/ZenZed06/RevenueLens', '_blank')">📂 GitHub Repo</button>
-        </div>
-      </div>
+ <!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
 
-      <!-- SheShield -->
-      <div class="project-card">
-        <video controls>
-          <source src="sheshield.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <h3>SheShield – Breast Health Assessment Tool</h3>
-        <p>Early detection saves lives. SheShield is a Python & Streamlit ML app using <strong>Logistic
-            Regression</strong> to assist healthcare professionals.</p>
-        <ul style="text-align:left; font-size:0.9rem; margin-bottom:10px;">
-          <li>Upload structured patient data (CSV/Excel)</li>
-          <li>Generate actionable risk insights</li>
-          <li>Download PDF risk report</li>
-        </ul>
-        <div class="tech-badges">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">Streamlit</span>
-          <span class="tech-badge">Pandas</span>
-          <span class="tech-badge">NumPy</span>
-          <span class="tech-badge">Scikit-learn</span>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-          <button onclick="window.open('https://sheshield.streamlit.app/', '_blank')">💻 Live Demo</button>
-          <button
-            onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-python-healthcareai-activity-7406589659834888192-xwSO', '_blank')">🔗
-            LinkedIn Post</button>
-          <button onclick="window.open('https://github.com/ZenZed06/SheShield', '_blank')">📂 GitHub Repo</button>
-        </div>
+    <!-- RevenueLens -->
+    <div class="project-card">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+        <iframe src="https://www.youtube.com/embed/qPZRbOvz41I"
+                title="RevenueLens Demo Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position: absolute; top:0; left:0; width:100%; height:100%;">
+        </iframe>
       </div>
-
-      <!-- Image Classification Neural Network -->
-      <div class="project-card">
-        <video controls>
-          <source src="imageclass.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <h3>Image Classification Neural Network</h3>
-        <p>Built and trained a CNN on CIFAR-10 dataset to classify unseen images using TensorFlow.</p>
-        <ul style="text-align:left; font-size:0.9rem; margin-bottom:10px;">
-          <li>End-to-end ML workflow: training, saving, inference</li>
-          <li>Real-world image processing</li>
-          <li>Turned theory into a functioning ML system</li>
-        </ul>
-        <div class="tech-badges">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">TensorFlow</span>
-          <span class="tech-badge">Keras</span>
-          <span class="tech-badge">CIFAR-10</span>
-          <span class="tech-badge">NumPy</span>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-          <button
-            onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-deeplearning-neuralnetworks-activity-7417067963071197184-Ggcn', '_blank')">🔗
-            LinkedIn Post</button>
-          <button onclick="window.open('https://github.com/ZenZed06/cifar10-image-classifier', '_blank')">📂 GitHub
-            Repo</button>
-        </div>
+      <h3>RevenueLens</h3>
+      <p>A Python-based Streamlit web app that analyzes customer behavior and visualizes how each customer contributes to annual revenue. Ideal for sales and marketing teams to identify high-value customers.</p>
+      <ul style="text-align:left; font-size:0.9rem; margin-bottom:10px;">
+        <li>Upload customer transaction data (CSV/Excel)</li>
+        <li>Visualize revenue contribution per customer</li>
+        <li>Identify top-performing and underperforming segments</li>
+        <li>Interactive charts with filters for date, product, and region</li>
+        <li>Export insights as PDF or CSV reports</li>
+      </ul>
+      <div class="tech-badges">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Streamlit</span>
+        <span class="tech-badge">Pandas</span>
+        <span class="tech-badge">NumPy</span>
+        <span class="tech-badge">Seaborn</span>
+        <span class="tech-badge">Matplotlib</span>
+        <span class="tech-badge">Scikit-learn</span>
       </div>
-
-      <!-- FIFA K-Means Clustering -->
-      <div class="project-card">
-        <video controls>
-          <source src="fifaa.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <h3>FIFA K-Means Clustering</h3>
-        <p>Custom K-Means clustering algorithm on FIFA 22 player data (17,000+ players) to recommend similar players
-          based on features.</p>
-        <ul style="text-align:left; font-size:0.9rem; margin-bottom:10px;">
-          <li>Cluster players by Overall, Potential, Market Value, Wage, Age</li>
-          <li>PCA-based visualization for clusters</li>
-          <li>Min-Max scaling, random centroid initialization, Euclidean distance, iterative centroid updates</li>
-          <li>Player recommendation system: find closest similar players</li>
-        </ul>
-        <div class="tech-badges">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">NumPy</span>
-          <span class="tech-badge">Pandas</span>
-          <span class="tech-badge">Machine Learning</span>
-          <span class="tech-badge">K-Means</span>
-          <span class="tech-badge">PCA</span>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-          <button
-            onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-python-datascience-activity-7430959494748119040-e6N2', '_blank')">🔗
-            LinkedIn Post</button>
-          <button onclick="window.open('https://github.com/ZenZed06/FIFA-KMeans-Project', '_blank')">📂 GitHub
-            Repo</button>
-        </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+        <button onclick="window.open('https://revenuelens.streamlit.app/', '_blank')">💻 Live Demo</button>
+        <button onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-datascience-python-activity-7404373047555571713-ujgY', '_blank')">🔗 LinkedIn Post</button>
+        <button onclick="window.open('https://github.com/ZenZed06/RevenueLens', '_blank')">📂 GitHub Repo</button>
       </div>
-
-      <!-- Angela AI Voice Assistant -->
-      <div class="project-card">
-        <video controls>
-          <source src="angela.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <h3>Angela – AI Voice Assistant</h3>
-        <p>Python-based interactive virtual assistant. Responds to voice commands, automates tasks, retrieves
-          information, and provides hands-free support.</p>
-        <ul style="text-align:left; font-size:0.9rem; margin-bottom:10px;">
-          <li>Set reminders & perform calculations</li>
-          <li>Retrieve real-time info (time, date, web queries)</li>
-          <li>Automate browsing tasks (Google, YouTube, social media)</li>
-          <li>Play songs from YouTube by voice command</li>
-          <li>Human-like responses using gTTS</li>
-          <li>Integrated with OpenAI API</li>
-        </ul>
-        <div class="tech-badges">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">Speech Recognition</span>
-          <span class="tech-badge">gTTS</span>
-          <span class="tech-badge">OpenAI API</span>
-          <span class="tech-badge">Automation</span>
-          <span class="tech-badge">YouTube API</span>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
-          <button
-            onclick="window.open('https://www.linkedin.com/posts/zenzed_ai-automation-python-activity-7373812944742129664--qxJ', '_blank')">🔗
-            LinkedIn Post</button>
-          <button onclick="window.open('https://github.com/ZenZed06/AngelaProject', '_blank')">📂 GitHub Repo</button>
-        </div>
-      </div>
-
     </div>
+
+    <!-- SheShield -->
+    <div class="project-card">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+        <iframe src="https://www.youtube.com/embed/YrdTJo_HLs0?si=KAAg3TlTkp_OqH_Y" 
+                title="SheShield – Breast Health Assessment Tool Demo" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen 
+                style="position: absolute; top:0; left:0; width:100%; height:100%;">
+        </iframe>
+      </div>
+      <h3>SheShield – Breast Health Assessment Tool</h3>
+      <p>Early detection saves lives. SheShield is a Python & Streamlit ML app using <strong>Logistic Regression</strong> to assist healthcare professionals.</p>
+      <ul style="text-align:left; font-size:0.9rem; margin-bottom:10px;">
+        <li>Upload structured patient data (CSV/Excel)</li>
+        <li>Generate actionable risk insights</li>
+        <li>Download PDF risk report</li>
+      </ul>
+      <div class="tech-badges">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Streamlit</span>
+        <span class="tech-badge">Pandas</span>
+        <span class="tech-badge">NumPy</span>
+        <span class="tech-badge">Scikit-learn</span>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+        <button onclick="window.open('https://sheshield.streamlit.app/', '_blank')">💻 Live Demo</button>
+        <button onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-python-healthcareai-activity-7406589659834888192-xwSO', '_blank')">🔗 LinkedIn Post</button>
+        <button onclick="window.open('https://github.com/ZenZed06/SheShield', '_blank')">📂 GitHub Repo</button>
+      </div>
     </div>
-  </section>
+
+    <!-- Image Classification Neural Network -->
+    <div class="project-card">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+        <iframe src="https://www.youtube.com/embed/cDi09QUYC20?si=x5iNwtQDtFt6NVWs"
+                title="Image Classification Neural Network Demo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position: absolute; top:0; left:0; width:100%; height:100%;">
+        </iframe>
+      </div>
+      <h3>Image Classification Neural Network</h3>
+      <p>Built and trained a CNN on CIFAR-10 dataset to classify unseen images using TensorFlow.</p>
+      <ul style="text-align:left; font-size:0.9rem; margin-bottom:10px;">
+        <li>End-to-end ML workflow: training, saving, inference</li>
+        <li>Real-world image processing</li>
+        <li>Turned theory into a functioning ML system</li>
+      </ul>
+      <div class="tech-badges">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">TensorFlow</span>
+        <span class="tech-badge">Keras</span>
+        <span class="tech-badge">CIFAR-10</span>
+        <span class="tech-badge">NumPy</span>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+        <button onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-deeplearning-neuralnetworks-activity-7417067963071197184-Ggcn', '_blank')">🔗 LinkedIn Post</button>
+        <button onclick="window.open('https://github.com/ZenZed06/cifar10-image-classifier', '_blank')">📂 GitHub Repo</button>
+      </div>
+    </div>
+
+    <!-- FIFA K-Means Clustering -->
+    <div class="project-card">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+        <iframe src="https://www.youtube.com/embed/RXMRptDg7Fo?si=WZiT4aWz36hB1bZc"
+                title="FIFA K-Means Clustering Demo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position: absolute; top:0; left:0; width:100%; height:100%;">
+        </iframe>
+      </div>
+      <h3>FIFA K-Means Clustering</h3>
+      <p>Custom K-Means clustering algorithm on FIFA 22 player data (17,000+ players) to recommend similar players based on features.</p>
+      <ul style="text-align:left; font-size:0.9rem; margin-bottom:10px;">
+        <li>Cluster players by Overall, Potential, Market Value, Wage, Age</li>
+        <li>PCA-based visualization for clusters</li>
+        <li>Min-Max scaling, random centroid initialization, Euclidean distance, iterative centroid updates</li>
+        <li>Player recommendation system: find closest similar players</li>
+      </ul>
+      <div class="tech-badges">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">NumPy</span>
+        <span class="tech-badge">Pandas</span>
+        <span class="tech-badge">Machine Learning</span>
+        <span class="tech-badge">K-Means</span>
+        <span class="tech-badge">PCA</span>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+        <button onclick="window.open('https://www.linkedin.com/posts/zenzed_machinelearning-python-datascience-activity-7430959494748119040-e6N2', '_blank')">🔗 LinkedIn Post</button>
+        <button onclick="window.open('https://github.com/ZenZed06/FIFA-KMeans-Project', '_blank')">📂 GitHub Repo</button>
+      </div>
+    </div>
+
+    <!-- Angela – AI Voice Assistant -->
+    <div class="project-card">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+        <iframe src="https://www.youtube.com/embed/_ot61ZysQqY?si=OkTu7EQ88O71v1E_"
+                title="Angela – AI Voice Assistant Demo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position: absolute; top:0; left:0; width:100%; height:100%;">
+        </iframe>
+      </div>
+      <h3>Angela – AI Voice Assistant</h3>
+      <p>Python-based interactive virtual assistant. Responds to voice commands, automates tasks, retrieves information, and provides hands-free support.</p>
+      <ul style="text-align:left; font-size:0.9rem; margin-bottom:10px;">
+        <li>Set reminders & perform calculations</li>
+        <li>Retrieve real-time info (time, date, web queries)</li>
+        <li>Automate browsing tasks (Google, YouTube, social media)</li>
+        <li>Play songs from YouTube by voice command</li>
+        <li>Human-like responses using gTTS</li>
+        <li>Integrated with OpenAI API</li>
+      </ul>
+      <div class="tech-badges">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Speech Recognition</span>
+        <span class="tech-badge">gTTS</span>
+        <span class="tech-badge">OpenAI API</span>
+        <span class="tech-badge">Automation</span>
+        <span class="tech-badge">YouTube API</span>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+        <button onclick="window.open('https://www.linkedin.com/posts/zenzed_ai-automation-python-activity-7373812944742129664--qxJ', '_blank')">🔗 LinkedIn Post</button>
+        <button onclick="window.open('https://github.com/ZenZed06/AngelaProject', '_blank')">📂 GitHub Repo</button>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- CERTIFICATIONS -->
   <section id="certifications">

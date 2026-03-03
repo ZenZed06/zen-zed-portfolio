@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Portfolio of Zain Zahid (Zen Zed) – Python Developer & Machine Learning / AI Engineer showcasing projects, skills, and certifications.">
-  <title>ZenZed Portfolio</title>
+  <title>Zen Zed | Machine Learning & AI Engineer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.1/lottie.min.js"></script>
@@ -450,6 +450,46 @@
         top: auto;
         right: 50%;
         transform: translateX(50%);
+      }
+    }
+
+    /* ---------- MOBILE FIXES ---------- */
+    @media(max-width: 600px) {
+      body {
+        font-size: 16px;
+        /* base font */
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 5%;
+      }
+
+      .hero .left {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+      }
+
+      .skills {
+        font-size: clamp(1rem, 4vw, 1.5rem);
+        height: auto;
+      }
+
+      #heroAnimation {
+        max-width: 250px;
+        margin-top: 20px;
+      }
+
+      .service-card,
+      .project-card,
+      .cert-card {
+        width: 90%;
+        margin: 10px auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
       }
     }
   </style>

@@ -464,26 +464,6 @@
       }
     }
 
-    /* ---------- MEDIA ---------- */
-    @media(max-width: 900px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .projects-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .fixed-socials {
-        flex-direction: row;
-        bottom: 20px;
-        top: auto;
-        right: 50%;
-        transform: translateX(50%);
-      }
-    }
 
     /* ---------- MOBILE FIXES + HAMBURGER ---------- */
     @media(max-width: 600px) {
@@ -571,10 +551,10 @@
     <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -590,71 +570,6 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-container">
-      <img src="hero_png.jpeg" alt="Zain Zahid working on ML projects">
-      <div class="about-text">
-
-        <!-- Intro -->
-        <p>Hello! I'm <span class="purple">Zain Zahid</span> (Zen Zed), a self-taught Python developer and aspiring
-          <strong>Machine Learning & AI Engineer</strong> with hands-on experience in practical ML & AI projects.
-        </p>
-
-        <p>My work focuses on solving real-world problems using supervised & unsupervised learning, deep learning, and
-          automation techniques. I enjoy turning ideas into functional applications, from predictive models to automated
-          solutions.
-        </p>
-
-        <p>My approach is simple: <strong>learn → build → iterate</strong>. I am passionate about pushing the boundaries
-          of what AI can achieve and continuously improving my skills through projects and deployment experience.
-        </p>
-
-        <!-- Buttons -->
-        <div class="about-buttons"
-          style="margin-top:20px; display:flex; gap:10px; opacity:0; transform: translateY(20px); transition:0.6s;">
-
-          <a href="cv-final.pdf" download class="download-btn">
-            📄 Download My CV
-          </a>
-
-        </div>
-
-      </div> <!-- about-text -->
-    </div> <!-- about-container -->
-  </section>
-
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="services-container">
-
-      <div class="service-card">
-        <h3>Machine Learning</h3>
-        <p>Supervised & unsupervised learning, regression & classification, clustering, feature engineering, model
-          evaluation, hyperparameter tuning, implemented with <strong>Scikit-learn</strong>.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Deep Learning</h3>
-        <p>Neural networks, backpropagation concepts, CNN-based image classification, and model training using
-          TensorFlow & Keras.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Mathematics for ML</h3>
-        <p>Linear algebra, probability & statistics, gradient descent optimization, and cost function analysis.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Programming & Data Tools</h3>
-        <p>Python, NumPy, Pandas, data preprocessing, and visualization workflows using Matplotlib.</p>
-      </div>
-
-    </div>
-  </section>
 
   <!-- PROJECTS -->
   <section id="projects">
@@ -833,6 +748,37 @@
     </div>
   </section>
 
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="services-container">
+
+      <div class="service-card">
+        <h3>Machine Learning</h3>
+        <p>Supervised & unsupervised learning, regression & classification, clustering, feature engineering, model
+          evaluation, hyperparameter tuning, implemented with <strong>Scikit-learn</strong>.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Deep Learning</h3>
+        <p>Neural networks, backpropagation concepts, CNN-based image classification, and model training using
+          TensorFlow & Keras.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Mathematics for ML</h3>
+        <p>Linear algebra, probability & statistics, gradient descent optimization, and cost function analysis.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Programming & Data Tools</h3>
+        <p>Python, NumPy, Pandas, data preprocessing, and visualization workflows using Matplotlib.</p>
+      </div>
+
+    </div>
+  </section>
+
   <!-- CERTIFICATIONS -->
   <section id="certifications">
     <h2>Certifications</h2>
@@ -851,6 +797,42 @@
       <span class="close" onclick="closeCert()">&times;</span>
       <img id="certImage" src="">
     </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="hero_png.jpeg" alt="Zain Zahid working on ML projects">
+      <div class="about-text">
+
+        <!-- Intro -->
+        <p>Hello! I'm <span class="purple">Zain Zahid</span> (Zen Zed), a self-taught Python developer and aspiring
+          <strong>Machine Learning & AI Engineer</strong> with hands-on experience in practical ML & AI projects.
+        </p>
+
+        <p>My work focuses on solving real-world problems using supervised & unsupervised learning, deep learning, and
+          automation techniques. I enjoy turning ideas into functional applications, from predictive models to automated
+          solutions.
+        </p>
+
+        <p>My approach is simple: <strong>learn → build → iterate</strong>. I am passionate about pushing the boundaries
+          of what AI can achieve and continuously improving my skills through projects and deployment experience.
+        </p>
+
+        <!-- Buttons -->
+        <div class="about-buttons"
+          style="margin-top:20px; display:flex; gap:10px; opacity:0; transform: translateY(20px); transition:0.6s;">
+
+          <a href="cv-final.pdf" download class="download-btn">
+            📄 Download My CV
+          </a>
+
+        </div>
+
+      </div> <!-- about-text -->
+    </div> <!-- about-container -->
   </section>
 
   <!-- CONTACT -->
